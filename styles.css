@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  min-width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  background-color: #0a433d;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar h1 {
+  font-style: italic;
+}
+
+.navbar a:hover {
+  border-bottom: 1px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+  height: 300px;
+  background-color: #fff;
+  color: black;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #004d45;
+}
+
+.showcase p {
+  margin: 20px 0;
+  line-height: 1.7;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.showcase a {
+  text-decoration: underline;
+}
+
+/* Showcase-2 */
+
+.showcase-2 {
+  height: 300px;
+  background-color: #fff;
+  color: black;
+  position: relative;
+}
+
+.showcase-2 img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+img {
+  min-width: 360px;
+}
+
+.showcase-2 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #004d45;
+}
+
+.showcase-2 p {
+  margin: 20px 0;
+  line-height: 1.7;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.showcase-2 a {
+  text-decoration: underline;
+}
+
+/* Showcase-3 */
+
+.showcase-3::before,
+.showcase-3:after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0%;
+  left: 0%;
+  background-color: white;
+  transform: skewY(-2deg);
+}
+
+.showcase-3 {
+  height: 550px;
+  background-color: #408d85;
+  color: #fff;
+  position: relative;
+}
+
+.showcase-3 .flex {
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 200px;
+}
+
+.features {
+  background-color: #004d45;
+  border-radius: 6px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px black solid;
+}
+
+.showcase-3 h1 {
+  color: #00ccb7;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-top: 40px;
+  font-size: 26px;
+}
+
+.showcase-3 p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.features-heading h1 {
+  color: #0a433d;
+}
+
+/* Showcase-4 */
+
+.showcase-4 {
+  position: relative;
+  height: 500px;
+}
+
+.showcase-4 .flex {
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 200px;
+  padding-top: 70px;
+}
+
+.showcase-4 h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #003530;
+  padding-top: 20px;
+  font-size: 26px;
+}
+
+.reviews {
+  border: 2px black solid;
+  border-radius: 6px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #408d85;
+  height: 230.8px;
+}
+
+.reviews p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Showcase-5 */
+.showcase-5 {
+  height: 400px;
+  background-color: #004d45;
+  position: relative;
+}
+
+.showcase-5 h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #00ccb7;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pricing {
+  background-color: #fff;
+  text-align: center;
+  color: black;
+  border-radius: 6px;
+  padding: 30px;
+  border: 2px black solid;
+  min-width: 326.667px;
+}
+
+.pricing p {
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.showcase-5 .flex {
+  text-align: center;
+  gap: 20px;
+  height: 300px;
+}
+
+/* Button */
+.btn {
+  font-weight: 400;
+  border: 0;
+  padding: 0 10px;
+  height: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* footer*/
+.footer {
+  text-align: center;
+  background-color: #0a433d;
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+  position: absolute;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100) {
+  .showcase {
+    height: auto;
+  }
+
+  .pricing {
+    min-width: 262.333px;
+  }
+}
